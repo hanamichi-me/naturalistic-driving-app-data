@@ -1,0 +1,66 @@
+# params.yaml
+
+base:
+    random_stage: 42
+    log_level: INFO
+
+data_load:
+  dataset_csv: 'data/raw/'
+
+data:
+  filename: '2024-07-27_15.04.58_57802403-2ab2-48be-8bc5-9d3610661405_sensor_android_1.txt'
+  merged_trips: "merged_trips.csv"
+  df_resampled_filtered: 'df_resampled_filtered.csv'
+  intersections_csv: 'intersections.csv'
+  df_within_30m_csv: 'df_within_30m.csv'
+  filtered_trip_html: 'filtered_trip.html'
+  unfiltered_trip_html: 'unfiltered_trip.html'
+  map_with_multiple_trips_different_colors_html: 'map_with_multiple_trips_different_colors.html'
+  segments_filtered_csv: 'segments_filtered.csv'
+  intersections: 'data/Road Assets/Intersections.csv'
+  traffic_signals: 'data/Road Assets/Traffic_Signal_Sites.csv'
+  intersections_no_signal: "intersections_no_signal.csv"
+  X_test: 'X_test.csv'
+  X_train_scaled: 'X_train_scaled.csv'
+  X_test_scaled: 'X_test_scaled.csv'
+  y_train: 'y_train.csv'
+  y_test: 'y_test.csv'
+  scaler: 'scaler.pkl'
+  random_forest_model: 'random_forest_model.pkl'
+  output1: 'output/plot1.png'
+
+paths:
+  main_dir: 'data/trips'
+  main_dir1 : 'data/effective_trips'
+  main_dir2 : 'data/Generated_data'
+  main_dir3: 'data/Generated_html'
+  sub_dir: '57802403-2ab2-48be-8bc5-9d3610661405'
+  split_data_dir: 'data/split_data'
+  model_output_path: "models/"
+
+
+
+# filter the trip here
+slice_params:
+  start_row: 698
+  end_row: 1471
+
+
+data_columns:
+  column_names: ['Time', 'Latitude', 'Longitude', 'AccX', 'AccY', 'AccZ', 'GyX', 'GyY', 'GyZ']
+
+model:
+    n_estimators: 100
+    
+
+google_maps:
+  api_key: 'AIzaSyDCFqhATCf0lnALGkY6qmoDs8aMNRbooSc'
+  car_url: 'https://th.bing.com/th/id/OIP.3BnpuUo3Lrwh_-t2I9VjKgAAAA?rs=1&pid=ImgDetMain'
+  intersection_url: 'https://th.bing.com/th/id/R.306df9dc3896002f3dfb2c185bcdd403?rik=qHLykucHPUy8Fg&pid=ImgRaw&r=0'
+  intersectionMarkers_url: "https://th.bing.com/th/id/R.306df9dc3896002f3dfb2c185bcdd403?rik=qHLykucHPUy8Fg&pid=ImgRaw&r=0"
+  trafficSignal_url: 'https://c8.alamy.com/comp/2GN7TT8/red-traffic-signal-vector-illustration-stop-traffic-signal-2GN7TT8.jpg'
+  car_icon_size: [50, 50]
+  intersection_size : [15, 15]
+  trafficSignal_size : [25, 25]
+  intersection_icon_size: [15, 15]
+  traffic_signal_icon_size: [25, 25]
