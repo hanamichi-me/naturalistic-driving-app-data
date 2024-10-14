@@ -54,7 +54,7 @@ model:
     
 
 google_maps:
-  api_key: 'AIzaSyDCFqhATCf0lnALGkY6qmoDs8aMNRbooSc'
+  api_key: 'Your_api_key'
   car_url: 'https://th.bing.com/th/id/OIP.3BnpuUo3Lrwh_-t2I9VjKgAAAA?rs=1&pid=ImgDetMain'
   intersection_url: 'https://th.bing.com/th/id/R.306df9dc3896002f3dfb2c185bcdd403?rik=qHLykucHPUy8Fg&pid=ImgRaw&r=0'
   intersectionMarkers_url: "https://th.bing.com/th/id/R.306df9dc3896002f3dfb2c185bcdd403?rik=qHLykucHPUy8Fg&pid=ImgRaw&r=0"
